@@ -71,125 +71,125 @@ A little overview of snowflake topics and most important features
 
 <div id="section7"></div>
 
-# Getting started
+# Load from AWS
 
 [Index](#section0)
 
 
 <div id="section8"></div>
 
-# Getting started
+# Load from Azure
 
 [Index](#section0)
 
 
 <div id="section9"></div>
 
-# Getting started
+# Load from GCP
 
 [Index](#section0)
 
 
 <div id="section10"></div>
 
-# Getting started
+# Snowpipe
 
 [Index](#section0)
 
 
 <div id="section11"></div>
 
-# Getting started
+# Time Travel
 
 [Index](#section0)
 
 
 <div id="section12"></div>
 
-# Getting started
+# Fail Safe
 
 [Index](#section0)
 
 
 <div id="section13"></div>
 
-# Getting started
+# Table Types
 
 [Index](#section0)
 
 
 <div id="section14"></div>
 
-# Getting started
+# Zero-Copy Cloning
 
 [Index](#section0)
 
 
 <div id="section15"></div>
 
-# Getting started
+# Data Sharing
 
 [Index](#section0)
 
 
 <div id="section16"></div>
 
-# Getting started
+# Data Sampling
 
 [Index](#section0)
 
 
 <div id="section17"></div>
 
-# Getting started
+# Scheduling Tasks
 
 [Index](#section0)
 
 
 <div id="section18"></div>
 
-# Getting started
+# Visualizations
 
 [Index](#section0)
 
 
 <div id="section19"></div>
 
-# Getting started
+# Streams
 
 [Index](#section0)
 
 
 <div id="section20"></div>
 
-# Getting started
+# Materialized views
 
 [Index](#section0)
 
 
 <div id="section21"></div>
 
-# Getting started
+# Data Masking
 
 [Index](#section0)
 
 
 <div id="section22"></div>
 
-# Getting started
+# Access Management
 
 [Index](#section0)
 
 
 <div id="section23"></div>
 
-# Getting started
+# Partner Connect
 
 [Index](#section0)
 
 
 <div id="section24"></div>
 
-# Getting started
+# Best practices
 
 [Index](#section0)
