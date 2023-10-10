@@ -34,6 +34,21 @@ A little overview of snowflake topics and most important features
 
 # Getting started
 
+## Worksheets 
+
+Worksheets are the most important part of our dashboard because in this part you can execute queries. 
+
+```sql
+create database snowflake_sample_data from share sfc_samples.sample_data;
+grant imported privileges on database snowflake_sample_data to role public;
+```
+
+If already exists some database you can query it directly
+
+```sql
+SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER;
+```
+
 [Index](#section0)
 
 <div id="section2"></div>
