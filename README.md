@@ -49,6 +49,32 @@ If already exists some database you can query it directly
 SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER;
 ```
 
+## Architecture
+
+* Storage:
+    - Hybrid Columnar Storage
+    - Saved in blobs instead of rows
+* Query Processing
+    - Muscle of the system
+    - Performs MMP (Massive Parallel Processing)
+    - Virtual Warehouse
+* Cloud Services
+    - Brain of the system 
+    - Managing infraestructure, Access control, security, Optimizer, Metadata, etcetera.
+
+## Virtual warehouse sizes
+
+Or servers size:
+
+* XS: 1
+* S: 2
+* M: 4
+* L: 8
+* XL: 16
+* 4XL: 128
+
+In enterprise version you can have a Multi-Clustering option.
+
 [Index](#section0)
 
 <div id="section2"></div>
