@@ -75,6 +75,42 @@ Or servers size:
 
 In enterprise version you can have a Multi-Clustering option.
 
+## Setting up using graph interface
+
+Admin > Warehouse > + Warehouse 
+
+Please check the advanced options.
+
+## Setting up using SQL commands 
+
+```sql
+CREATE OR REPLACE WAREHOUSE TESTING_SQL_WH
+WITH 
+WAREHOUSE_SIZE = XSMALL
+MAX_CLUSTER_COUNT = 3
+MIN_CLUSTER_COUNT = 1
+AUTO_SUSPEND = 300
+AUTO_RESUME = TRUE
+INITIALLY_SUSPENDED = TRUE
+COMMENT = 'This is a testing warehouse created using sql commands';
+```
+
+```sql
+SELECT * FROM CUSTOMER;
+```
+
+```sql
+DROP WAREHOUSE TESTING_SQL_WH;
+```
+
+## Scalling Policy
+
+## Exploring tables and databases
+
+## Loading data in snowflake
+
+
+
 [Index](#section0)
 
 <div id="section2"></div>
