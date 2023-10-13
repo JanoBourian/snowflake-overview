@@ -105,11 +105,75 @@ DROP WAREHOUSE TESTING_SQL_WH;
 
 ## Scalling Policy
 
+Multi-Clustering is key for this approach. Depending on the workload shutdown or star new clusters. 
+
+The auto-scaling is the base policy:
+
+* Standard: default settings
+* Economy: conserve credits rather than starting additional warehouses. 
+
 ## Exploring tables and databases
+
+Data > Databases > + Database
+We can create schemas. 
+
+```sql
+create table <table_name> (
+    <col1_name> <col1_type>
+    -- , <col2_name> <col2_type>
+    -- supported types: https://docs.snowflake.com/en/sql-reference/intro-summary-data-types.html
+    )
+    -- comment = '<comment>';
+```
+
+```sql
+create or replace TABLE FIRST_DB.FIRST_SCHEMA.FIRST_TABLE (
+	TEXTCOLUMN VARCHAR(16777216)
+)COMMENT='This is our first table'
+;
+SELECT * FROM FIRST_DB.FIRST_SCHEMA.FIRST_TABLE;
+```
+
+```sql
+SELECT * FROM FIRST_DB.FIRST_SCHEMA.FIRST_TABLE;
+```
 
 ## Loading data in snowflake
 
+```sql
+ALTER DATABASE FIRST_DB RENAME TO OUR_FIRST_DB; 
 
+CREATE TABLE "OUR_FIRST_DB"."PUBLIC"."LOAN_PAYMENT" (
+  "Loan_ID" STRING,
+  "loan_status" STRING,
+  "Principal" STRING,
+  "terms" STRING,
+  "effective_date" STRING,
+  "due_date" STRING,
+  "paid_off_time" STRING,
+  "past_due_days" STRING,
+  "age" STRING,
+  "education" STRING,
+  "Gender" STRING);
+
+//Check that table is empty
+USE DATABASE OUR_FIRST_DB;
+
+SELECT * FROM LOAN_PAYMENT;
+
+ 
+ //Loading the data from S3 bucket
+  
+ COPY INTO LOAN_PAYMENT
+    FROM s3://bucketsnowflakes3/Loan_payments_data.csv
+    file_format = (type = csv 
+                   field_delimiter = ',' 
+                   skip_header=1);
+    
+
+//Validate
+ SELECT * FROM LOAN_PAYMENT;
+```
 
 [Index](#section0)
 
