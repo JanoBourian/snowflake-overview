@@ -175,6 +175,26 @@ SELECT * FROM LOAN_PAYMENT;
  SELECT * FROM LOAN_PAYMENT;
 ```
 
+```sql
+-- Exercise
+CREATE OR REPLACE TABLE EXERCISE_DB(
+ID INT,
+first_name varchar,
+last_name varchar,
+email varchar, 
+age INT,
+city varchar
+) COMMENT='Table based on exercise for unit two';
+
+COPY INTO EXERCISE_DB
+    FROM s3://snowflake-assignments-mc/gettingstarted/customers.csv
+    file_format = (type = csv 
+                   field_delimiter = ',' 
+                   skip_header=1);
+
+SELECT * FROM EXERCISE_DB;
+```
+
 [Index](#section0)
 
 <div id="section2"></div>
