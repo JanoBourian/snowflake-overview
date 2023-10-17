@@ -201,6 +201,58 @@ SELECT * FROM EXERCISE_DB;
 
 # Architecture
 
+## What is a datawarehouse?
+
+Consolidate and integrate different data sources and working with that information. 
+
+Challenges:
+* Work with different formats
+* Work with different os.
+
+ETL = Extract, Transform and Load
+
+Different layers:
+* Raw data from the data sources (stagin area).
+* Data integration (Data transformation).
+    * Transformed
+    * Cleaned
+    * Integrated
+* Access layer.
+    * Reportging
+    * Data Science
+    * Other apps
+
+## Cloud computing
+
+Is the step after Data Centers. 
+
+Snowflake is SaaS:
+* Application
+    * databases, tables, etc
+
+Snowflake:
+* Software
+* Data
+* Operating system
+
+Cloud provider:
+* Physical servers
+* Virtual machines
+* Physical storage
+
+## Snowflake editions
+
+* Standard: introductory level
+* Enterprise: additional features for the needs of large-scale enterprises
+* Business critical: even higher levels of data protection for organizations with extremely sensitive data
+* Virtual private: highest level of security
+
+## Snowflake princing
+
+## Monitor Usage
+
+## Roles in Snowflake
+
 [Index](#section0)
 
 <div id="section3"></div>
