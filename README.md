@@ -249,9 +249,36 @@ Cloud provider:
 
 ## Snowflake princing
 
+Compute and storage are separated. 
+
+Storage:
+* Monthly storafe fees
+* Based on average storage used per month
+* Cost calculated after compression
+* Cloud providers
+
+Compute:
+* Charged for active warehouse per hour
+* Dependin on the size of the warehouse
+* Billed by second (minimun one minute)
+* Charged in Snowflake credits (no usd or euros)
+
+Credit:
+* Standard: $2
+* Enterprise: $3
+* Business Critical: $4
+
+Storage pays:
+* On demand Storage
+* Capacity Storage
+
 ## Monitor Usage
 
+Admin > Usage
+
 ## Roles in Snowflake
+
+Admin > Users & Roles
 
 [Index](#section0)
 
