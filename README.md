@@ -280,6 +280,13 @@ Admin > Usage
 
 Admin > Users & Roles
 
+Roles: 
+* ACOUNTADMIN
+* SECURITYADMIN / SYSADMIN
+* USERADMIN
+* PUBLIC
+
+
 [Index](#section0)
 
 <div id="section3"></div>
